@@ -2,10 +2,10 @@ import openai
 import telebot
 
 # open ai api key
-openai.api_key = "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"
+openai.api_key = "YOUR_OPENAI_KEY"
 
 # telegram bot token
-bot_token = "6813558981:AAGEecosIF7E25qekSFF9CrmNb36LLiTRRE" 
+bot_token = "YOUR_BOT_TOKEN" 
 
 # 봇 인스턴스 생성 
 bot = telebot.TeleBot(bot_token) 

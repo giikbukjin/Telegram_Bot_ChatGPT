@@ -2,7 +2,7 @@ import openai
 import telebot
 
 # open ai api key
-openai.api_key = "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"
+openai.api_key = "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"
 
 # telegram bot token
 bot_token = "6813558981:AAGEecosIF7E25qekSFF9CrmNb36LLiTRRE" 
@@ -23,6 +23,7 @@ def telegram_bot_message(message):
         ]
     )
     content = response['choices'][0]['message']['content']
+    print(content)
     bot.send_message(message.chat.id, content)
 
 # Start the bot
